@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:6
 
-WORKDIR /src
-ADD . /src
+WORKDIR /app
+COPY . /app
 EXPOSE 3000
 CMD ["node", "/src/server.js"]
